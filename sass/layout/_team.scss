@@ -1,0 +1,75 @@
+.team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member-card:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.team-member-card:not(:nth-last-child(-n+4)) {
+    margin-bottom: 30px;
+}
+
+.team-member-card-bottom {
+    padding: 30px 0;
+}
+
+.our-team {
+    background-color: var(--light-grey-background-color);
+}
+
+.team-member-card {
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: var(--light-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-member,
+.team-member-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-member {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.team-member-accounts-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.team-member-accounts-list-link {
+    color: var(--icon-background-color);
+    background-color: var(--light-background-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.team-member-accounts-list-icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-member-accounts-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-member-accounts-list-link:hover .team-member-accounts-list-icon,
+.team-member-accounts-list-link:focus .team-member-accounts-list-icon {
+    fill: var(--light-background-color)
+}
+
+.team-member-accounts-list-link:hover,
+.team-member-accounts-list-link:focus {
+    background-color: var(--accent-color);
+}
