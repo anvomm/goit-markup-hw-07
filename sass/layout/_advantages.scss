@@ -12,8 +12,7 @@
 }
 
 .advantages__icon-box {
-    display: flex;
-    align-items: center;
+    @extend %aligning-y;
     justify-content: center;
     background-color: var(--light-grey-background-color);
     border-radius: 4px;
@@ -25,16 +24,12 @@
 .advantage__title {
     margin-bottom: 10px;
 
+    @include font-sizing (14px, 16px);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
 }
 
 .advantage__description {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font-sizing (14px, 24px);
 }

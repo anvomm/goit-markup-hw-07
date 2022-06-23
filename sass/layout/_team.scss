@@ -28,10 +28,8 @@
 
 .team-member__name,
 .team-member__position {
-    font-size: 16px;
-    line-height: 1.19;
+    @include font-sizing (16px, 19px);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team-member__name {
@@ -42,9 +40,7 @@
 }
 
 .accounts-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centering;
     margin-top: 16px;
 }
 
