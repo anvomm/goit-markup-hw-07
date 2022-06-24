@@ -57,15 +57,10 @@
 }
 
 .accounts-list__icon {
-    fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .accounts-list__link:hover &,
     .accounts-list__link:focus & {
         fill: var(--light-background-color)
     }
-}
-
-.accounts-list__item:not(:last-child) {
-    margin-right: 10px;
 }

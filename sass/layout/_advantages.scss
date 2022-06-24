@@ -12,8 +12,7 @@
 }
 
 .advantages__icon-box {
-    @extend %aligning-y;
-    justify-content: center;
+    @extend %flex-centering;
     background-color: var(--light-grey-background-color);
     border-radius: 4px;
     width: 100%;
@@ -24,9 +23,6 @@
 .advantage__title {
     margin-bottom: 10px;
 
-    @include font-sizing (14px, 1.14);
-    font-weight: 700;
-    text-transform: uppercase;
     color: var(--title-color);
 }
 
