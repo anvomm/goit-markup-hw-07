@@ -1,4 +1,4 @@
-.team__list {
+.team-list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -28,7 +28,7 @@
 
 .team-member__name,
 .team-member__position {
-    @include font-sizing (16px, 19px);
+    @include font-sizing (16px, 1.19);
     text-align: center;
 }
 

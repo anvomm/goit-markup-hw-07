@@ -1,3 +1,4 @@
+@import './utils/fonts';
 @import './utils/vars';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
@@ -8,6 +9,7 @@
 @import './base/container';
 
 @import './components/button';
+@import './components/section-title';
 @import './components/social-item';
 @import './components/social-icon';
 @import './components/logo';
@@ -15,6 +17,7 @@
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
+@import './components/filter';
 
 @import './layout/header';
 @import './layout/hero';
