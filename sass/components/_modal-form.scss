@@ -86,6 +86,10 @@
 
 .modal-form__checkbox {
     position: absolute;
+
+    &_visually-hidden {
+        @extend %visually-hidden;
+    }
 }
 
 .modal-form__checkbox-text {

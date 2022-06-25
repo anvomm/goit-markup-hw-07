@@ -18,4 +18,8 @@
     text-align: center;
 
     color: var(--title-color);
+
+    &_visually-hidden {
+        @extend %visually-hidden;
+    }
 }

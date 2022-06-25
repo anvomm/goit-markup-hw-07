@@ -49,19 +49,6 @@
   src: url("../fonts/raleway-v27-latin_cyrillic-700.eot");
   src: local(""), url("../fonts/raleway-v27-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v27-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v27-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway-v27-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v27-latin_cyrillic-700.svg#Raleway") format("svg");
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .menu, .header-contact-list {
   display: flex;
   font-weight: 500;
@@ -80,6 +67,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-form__checkbox_visually-hidden, .section__title_visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h1,
@@ -137,7 +137,6 @@ body {
   text-align: center;
   color: var(--title-color);
 }
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -366,7 +365,6 @@ body {
 .modal-form__checkbox {
   position: absolute;
 }
-
 .modal-form__checkbox-text {
   margin-bottom: 30px;
   font-size: 14px;
