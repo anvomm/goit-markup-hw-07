@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.clients__link, .accounts, .work__title, .advantages__icon-box, .modal-form__checkbox-text, .modal-close-button, .social-icon {
+.clients__link, .accounts, .work__title, .advantages__icon-box, .social-icon, .modal-close-button, .modal-form__checkbox-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +118,14 @@ body {
   color: var(--text-color);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section {
   padding: 94px 0px;
 }
@@ -137,93 +145,6 @@ body {
   text-align: center;
   color: var(--title-color);
 }
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  text-align: center;
-  color: var(--light-background-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button:hover, .button:focus {
-  background-color: var(--secondary-accent-color);
-}
-
-.section__uppercase-title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.social-item {
-  width: 44px;
-  height: 44px;
-}
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-icon {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  fill: currentColor;
-}
-
-.logo {
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: var(--accent-color);
-}
-
-.subscription-form__input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: var(--grey-background-color);
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscription-form__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.subscription-form__button {
-  display: inline-flex;
-  align-items: center;
-  min-width: 166px;
-  padding: 10px 29px;
-  margin-left: 12px;
-}
-
-.subscription-form__button-icon {
-  margin-left: 10px;
-  fill: currentColor;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -244,38 +165,57 @@ body {
   transform: translate(-50%, -50%) scale(0.25);
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  background-color: var(--light-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.button {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--light-background-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .button:focus {
+  background-color: var(--secondary-accent-color);
 }
 
-.modal-close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  background-color: var(--light-background-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.modal-close-button__icon {
-  fill: #000000;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.portfolio-filter__item:not(:last-child) {
+  margin-right: 8px;
 }
-.modal-close-button:hover .modal-close-button__icon, .modal-close-button:focus .modal-close-button__icon {
-  fill: var(--accent-color);
+
+.portfolio-filter__button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--title-color);
+  background-color: var(--light-grey-background-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-filter__button:hover, .portfolio-filter__button:focus {
+  color: var(--light-background-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--accent-color);
 }
 
 .modal-form {
@@ -404,32 +344,92 @@ body {
   align-self: center;
 }
 
-.portfolio-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.portfolio-filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.portfolio-filter__button {
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  background-color: var(--light-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 6px 22px;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  font-weight: 500;
-  text-align: center;
-  color: var(--title-color);
-  background-color: var(--light-grey-background-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-filter__button:hover, .portfolio-filter__button:focus {
-  color: var(--light-background-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+.modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-close-button__icon {
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-button:hover .modal-close-button__icon, .modal-close-button:focus .modal-close-button__icon {
+  fill: var(--accent-color);
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: currentColor;
+}
+
+.subscription-form__input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: var(--grey-background-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscription-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription-form__button {
+  display: inline-flex;
+  align-items: center;
+  min-width: 166px;
+  padding: 10px 29px;
+  margin-left: 12px;
+}
+
+.subscription-form__button-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.section__uppercase-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .header {
