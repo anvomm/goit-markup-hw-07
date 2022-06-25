@@ -1,9 +1,9 @@
-.clients-list {
+.clients {
     display: flex;
 
 }
 
-.clients-list__item {
+.clients__item {
     width: 170px;
     height: 92px;
 
@@ -12,7 +12,7 @@
     }
 }
 
-.clients-list__link {
+.clients__link {
     @extend %flex-centering;
     border: 1px solid var(--icon-background-color);
     border-radius: 4px;
@@ -27,6 +27,6 @@
         border: 1px solid var(--accent-color);
     }
 }
-.clients-list__icon {
+.clients__icon {
     fill: currentColor;
 }
