@@ -121,6 +121,22 @@ body {
 .section {
   padding: 94px 0px;
 }
+.section_no-padding-top {
+  padding-top: 0;
+}
+.section_other-background-color {
+  background-color: var(--light-grey-background-color);
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--title-color);
+}
 
 .container {
   width: 1200px;
@@ -144,16 +160,6 @@ body {
 }
 .button:hover, .button:focus {
   background-color: var(--secondary-accent-color);
-}
-
-.section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-align: center;
-  color: var(--title-color);
 }
 
 .section__uppercase-title {
@@ -571,10 +577,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.work {
-  padding-top: 0px;
-}
-
 .work__list {
   display: flex;
 }
@@ -604,10 +606,6 @@ body {
 
 .team-member__card-bottom {
   padding: 30px 0;
-}
-
-.team {
-  background-color: var(--light-grey-background-color);
 }
 
 .team-member {
