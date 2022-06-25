@@ -70,7 +70,7 @@
   letter-spacing: 0.02em;
 }
 
-.header-contact-list__link, .header-contact-list__item, .header-container,
+.header-contact-list__link, .header-contact-list__item, .header__container,
 .site-navigation {
   display: flex;
   align-items: center;
@@ -755,7 +755,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.footer-container_left-side {
+.footer__container_left-side {
   display: flex;
   align-items: baseline;
 }
@@ -764,7 +764,7 @@ body {
   margin-right: 70px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
