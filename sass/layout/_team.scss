@@ -35,12 +35,12 @@
     color: var(--title-color);
 }
 
-.accounts-list {
+.accounts {
     @extend %flex-centering;
     margin-top: 16px;
 }
 
-.accounts-list__link {
+.accounts__link {
     color: var(--icon-background-color);
     background-color: var(--light-background-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,11 +52,11 @@
 
 }
 
-.accounts-list__icon {
+.accounts__icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .accounts-list__link:hover &,
-    .accounts-list__link:focus & {
+    .accounts__link:hover &,
+    .accounts__link:focus & {
         fill: var(--light-background-color)
     }
 }
